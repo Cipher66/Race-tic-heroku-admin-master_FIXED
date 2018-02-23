@@ -12,7 +12,7 @@ class AdminController extends Controller
     public function __construct()
     {
         //middleware para admin
-        //$this->middleware('auth:admin');
+        $this->middleware('auth:admin');
     }
     /**
      * Show the application dashboard.
